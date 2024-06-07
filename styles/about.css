@@ -1,6 +1,5 @@
-
-header{
-    display: flex;
+body{
+    overflow-x: hidden;
 }
 
 .header-nav{
@@ -49,6 +48,7 @@ header{
 
 .banner__img{
     margin-top: 86px;
+    max-width: 100%;
 }
 
 /* achievment-section */
@@ -118,8 +118,9 @@ header{
 }
 
 .service-li__circle{
-    width: 63px;
-    height: 63px;
+    min-width: 63px;
+    min-height: 63px;
+    display: flex;
     border-radius: 50%;
     background-color: #D9D9D9;
 }
@@ -170,48 +171,45 @@ header{
 
 .footer{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 80px 0;
-}
-
-.email-text{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.email-form{
-    padding-top: 15px;
-}
-
-.footer-input{
-    width: 300px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    color: #D9D9D9;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 15px;
-}
-
-.footer-email__svg{
-    transform: translate(-35px, -5px);
 }
 
 .al-end{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+}
+
+.footer-email{
+    margin-top: 40px;
+}
+
+.email-label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-input{
+    width: 440px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px
+}
+
+.footer-email__strelka{
+    transform: translate(-30px, 0);
 }
 
 .footer-socials{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    transform: translate(-30px, 40px);
+    margin: 40px 30px 0 0;
 }
 
 .footer-socials-icons{
@@ -219,8 +217,114 @@ header{
     gap: 20px;
 }
 
-.footer-socials__svg{
+.footer-socials-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #D9D9D9;
     border-radius: 50%;
-    padding: 1px 3px;
+    width: 30px;
+    height: 30px;
+    padding: 1px 2px;
+    color: green;
+}
+
+
+@media screen and (max-width: 1145px) {
+    
+    h1{
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .wide-wrap{
+        max-width: 900px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section__h4{
+        font-size: 14px;
+    }
+
+    .line{
+        width: 300px;
+    }
+
+    /* achievment section */
+
+    .achievment__features{
+        position: relative;
+    }
+
+    .achievment__features__li h2{
+        font-size: 30px;
+    }
+
+    .achievment__features__li h4{
+        font-size: 15px;
+    }
+
+    .achievment__img{
+        width: 100%;
+    }
+
+
+    /* service section */
+
+    .service-ul__li h3{
+        font-size: 18px;
+    }
+
+    .service-ul__li p{
+        font-size: 14px;
+    }
+
+    /* footer section */
+
+    .footer-input{
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width: 869px) {
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .burger-w-menu{
+        display: block;
+    }
+
+    .burger-menu{
+        position: absolute;
+        background-color: #2C3878;
+        color: white;
+        width: 200px;
+        height: auto;
+        transform: translate(-150px, 0);
+        padding: 10px 10px;
+        display: none;
+        z-index: 1;
+        border: 1px solid black;
+    }
+
+    .burger-menu a {
+        color: white;
+    }
+
+    .burger__li{
+        font-size: 30px;
+    }
 }
