@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .header-nav{
     display: flex;
     align-items: center;
