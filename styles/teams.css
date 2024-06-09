@@ -111,12 +111,21 @@
 
 
 
-@media all and (max-width: 1230px) {
+@media screen and (max-width: 1230px) {
+
     .wide-wrap{
-        width: 900px;
+        max-width: 900px;
         padding-left: 10px;
         padding-right: 10px;
         margin: 0 auto;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 14px;
     }
 
     .section__h4{
@@ -128,15 +137,23 @@
     }
 
     .designer-ul{
-        display: grid;
         grid-template-columns: repeat(2, 0fr);
-        gap: 24px;
-        margin-top: 80px;
         justify-content: center;
     }
 
-    h1{
-        font-size: 90px;
+
+    .service-ul__li h3{
+        font-size: 18px;
+    }
+
+    .service-ul__li p{
+        font-size: 14px;
+    }
+
+    /* footer section */
+
+    .footer-input{
+        width: calc(100% - 60px);
     }
 }
 
@@ -178,11 +195,10 @@
         font-size: 30px;
     }
 
-    .achievment__img{
-        display: none;
+    .designer-ul{
+        grid-template-columns: repeat(1, 0fr);
+        justify-content: center;
     }
-
-    /* service section */
 
     .service-ul{
         display: flex;

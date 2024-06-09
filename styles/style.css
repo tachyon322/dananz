@@ -313,11 +313,6 @@ body{
     .header-container{
         display: flex;
         justify-content: space-between;
-
-        & .header__burger{
-            display: none;
-        }
-
     }
 
     .wide-wrap{
@@ -490,7 +485,7 @@ body{
     }
 
     .burger-w-menu{
-        display: block;
+        display: flex;
     }
 
     .burger-menu{
@@ -499,7 +494,7 @@ body{
         color: white;
         width: 200px;
         height: auto;
-        transform: translate(-150px, 0);
+        transform: translate(-150px, 50px);
         padding: 10px 10px;
         display: none;
         z-index: 1;
@@ -523,6 +518,7 @@ body{
         & h1{
             font-size: 40px;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         & .design::after{
@@ -532,7 +528,7 @@ body{
         & .banner__features{
             width: 90px;
             height: auto;
-            transform: translate(-50px, -50px);
+            transform: translate(-20px, -50px);
 
             & ul{
                 padding: 10px 10px;
