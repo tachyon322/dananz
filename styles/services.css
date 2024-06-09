@@ -1,5 +1,5 @@
 
-.header__list:nth-child(2){
+.header__list:nth-child(3){
     font-weight: 700;
 }
 
@@ -25,86 +25,69 @@
 
 /* achievment-section */
 
-.achievment-img-w-features{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 56px;
-}
-
-.achievment__features{
-    width: 252px;
-    height: 525px;
-    padding: 40px 48px;
-    background-color: #2C3878;
+.achievement-ul{
     display: flex;
     flex-direction: column;
-    gap: 57px;
+    gap: 40px;
 }
 
-.achievment__features__li{
-    text-align: center;
-    color: white;
-}
-
-.achievment__features__h2{
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 160%;
-}
-
-.achievment__features__h4{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-}
-
-.service__p{
-    margin-top: 25px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 160%;
-    color: #9C9C9C;
-}
-
-.service-ul{
+.achievement-ul__item{
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.service-ul__li{
-    width: 388px;
-    height: 295px;
-    padding: 20px 27px;
-    background-color: white;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 120px;
 }
 
-.service-li__circle{
-    min-width: 63px;
-    min-height: 63px;
-    display: flex;
-    border-radius: 50%;
-    background-color: #D9D9D9;
+.achievement-ul__item img{
+    max-width: 100%;
 }
 
-.service-li__h3{
-    display: flex;
-    padding: 20px 0;
-}
-
-.service-li__p{
+.achievement-ul__item p{
     color: #9C9C9C;
+    padding-top: 20px;
+}
+
+
+/* product-section */
+
+.product-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-ul__text{
+    display: flex;
+    align-items: start;
+    width: 1080px;
+    justify-content: space-between;
+}
+
+.product-ul__text p{
+    padding-top: 24px;
+}
+
+.product-ul__text svg{
+    transform: translate(0, 5px);
+}
+
+.product-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    padding-top: 73px;
+}
+
+.product-ul li{
+    display: flex;
+    gap: 80px;
 }
 
 /* discuss-section */
 
 
+
 /* footer section */
+
 
 
 
@@ -122,7 +105,6 @@
         max-width: 900px;
         padding-left: 10px;
         padding-right: 10px;
-        margin: 0 auto;
     }
 
     .section__h4{
@@ -152,14 +134,11 @@
     }
 
 
-    /* service section */
+    /* product-section */
 
-    .service-ul__li h3{
-        font-size: 18px;
-    }
-
-    .service-ul__li p{
-        font-size: 14px;
+    .achievement-ul__item{
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 
     /* footer section */

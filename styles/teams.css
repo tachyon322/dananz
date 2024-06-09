@@ -1,0 +1,141 @@
+.header__list:nth-child(4){
+    font-weight: 700;
+}
+
+
+/* banner-section */
+
+.banner-text{
+    margin-top: 97px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.banner__title{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.banner__img{
+    margin-top: 86px;
+    max-width: 100%;
+}
+
+
+/* designer-section */
+
+.designer__p{
+    padding-top: 24px;
+    color: var(--color10);
+}
+
+.designer-ul{
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 24px;
+    margin-top: 80px;
+}
+
+.designer-ul__item{
+    width: 282px;
+    height: 400px;
+    background-color: #2C3878;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.designer-ul__item img{
+    position: absolute;
+}
+
+.designer-ul__text{
+    position: relative;
+    background-color: white;
+    width: 258px;
+    height: 96px;
+    padding: 18px 16px;
+    margin-bottom: 12px;
+}
+
+.designer-ul__text p{
+    color: var(--color30);
+}
+
+/* service-section */
+
+.service__p{
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #9C9C9C;
+}
+
+.service-ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.service-ul__li{
+    width: 388px;
+    height: 295px;
+    padding: 20px 27px;
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-li__circle{
+    min-width: 63px;
+    min-height: 63px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.service-li__h3{
+    display: flex;
+    padding: 20px 0;
+}
+
+.service-li__p{
+    color: #9C9C9C;
+}
+
+
+
+@media all and (max-width: 1230px) {
+    * {
+       background: red;
+    }
+
+    .wide-wrap{
+        width: 900px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+
+    .section__h4{
+        font-size: 14px;
+    }
+
+    .line{
+        width: 300px;
+    }
+
+    .designer-ul{
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        gap: 24px;
+        margin-top: 80px;
+        justify-content: center;
+    }
+}
