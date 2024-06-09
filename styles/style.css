@@ -600,6 +600,10 @@ body{
         }
     }
 
+    .services-text h1{
+        width: auto;
+    }
+
     #services-section{
 
         & .ul-strelka{
