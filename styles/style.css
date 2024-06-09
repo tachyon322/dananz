@@ -1,6 +1,3 @@
-body{
-    overflow-x: hidden;
-}
 
 .header__list:first-child{
     font-weight: 700;
@@ -439,7 +436,7 @@ body{
     /* product-section */
 
     #product-section{
-        padding-top: 50px;
+        margin-top: -410px;
     }
 
 
@@ -601,7 +598,7 @@ body{
     }
 
     .services-text h1{
-        width: auto;
+        width: 300px;
     }
 
     #services-section{
@@ -618,8 +615,6 @@ body{
     /* material-section */
 
     #material-section{
-        padding-bottom: 280px;
-
         & .material-imgs{
             display: flex;
             flex-direction: column;
